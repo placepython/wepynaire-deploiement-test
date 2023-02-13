@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+    postgres:
+        container_name: wepynaire_postgres_container
+        image: postgres:latest
+        working_dir: /app
+        restart: always
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: postgres
+        volumes:
+            - "postgres_wepynaire_5432:/var/lib/postgresql"
+
+    cache:
+        container_name: wepynaire_cache_container
+        image: redis:latest
+        ports:
+            - "6379:6379"
+        restart: always
+        volumes:
+            - "cache_wepynaire_6379:/data"
+
+volumes:
+    postgres_wepynaire_5432:
+    cache_wepynaire_6379:
