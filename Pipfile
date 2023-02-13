@@ -23,6 +23,7 @@ psycopg2-binary = "*"
 
 [prod]
 daphne = "*"
+gunicorn = "*"
 psycopg2 = "*"
 
 [requires]
