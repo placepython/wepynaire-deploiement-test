@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[base]
+channels = "*"
+channels-redis = "*"
+django = "*"
+django-braces = "*"
+django-environ = "*"
+django-embed-video = "*"
+django-redisboard = "*"
+djangorestframework = "*"
+pillow = "*"
+redis = "*"
+requests = "*"
+
+[local]
+django-debug-toolbar = "*"
+psycopg2-binary = "*"
+
+[prod]
+daphne = "*"
+psycopg2 = "*"
+
+[requires]
+python_version = "3.10"
+
+
