@@ -8,7 +8,7 @@ ADMINS = [
     ("Thierry Chappuis", "email@exemple.com"),
 ]
 
-ALLOWED_HOSTS = ["wepynaire.placepython.fr"]
+ALLOWED_HOSTS = ["wepynaire.placepython.ch"]
 
 DATABASES = {
     "default": env.db(),
