@@ -3,11 +3,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[base]
+[packages]
 channels = "*"
 channels-redis = "*"
 django = "*"
 django-braces = "*"
+django-debug-toolbar = "*"
 django-environ = "*"
 django-embed-video = "*"
 django-extensions = "*"
@@ -16,12 +17,6 @@ djangorestframework = "*"
 pillow = "*"
 redis = "*"
 requests = "*"
-
-[local]
-django-debug-toolbar = "*"
-psycopg2-binary = "*"
-
-[prod]
 daphne = "*"
 gunicorn = "*"
 psycopg2 = "*"

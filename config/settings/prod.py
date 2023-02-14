@@ -8,7 +8,7 @@ ADMINS = [
     ("Thierry Chappuis", "email@exemple.com"),
 ]
 
-ALLOWED_HOSTS = ["207.154.199.149"]
+ALLOWED_HOSTS = ["212.47.229.217"]
 
 DATABASES = {
     "default": env.db(),
